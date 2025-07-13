@@ -9,17 +9,26 @@
 //   }, [router]);
 //   return null;
 // }
-"use client";
+// "use client";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+// import { useEffect } from "react";
+// import { useRouter } from "next/navigation";
 
-export default function HomeRedirect() {
-  const router = useRouter();
+// export default function HomeRedirect() {
+//   const router = useRouter();
 
-  useEffect(() => {
-    router.replace("/landing");
-  }, [router]);
+//   useEffect(() => {
+//     router.replace("/landing");
+//   }, [router]);
 
-  return null;
+//   return null;
+// }
+
+
+'use client';
+
+import LandingPage from './landing/page';
+
+export default function Home() {
+  return <LandingPage />;
 }
