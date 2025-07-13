@@ -21,8 +21,8 @@ UpSkillAI is a modern, AI-powered online learning platform designed to help lear
 - **Framework**: [Next.js](https://nextjs.org/)
 - **UI**: [Tailwind CSS](https://tailwindcss.com/), ShadCN/UI
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Database**: (e.g., PostgreSQL with Drizzle ORM)
-- **Auth**: Clerk (or mention your auth provider)
+- **Database**:  PostgreSQL with Drizzle ORM 
+- **Auth**: Clerk 
 - **Deployment**: [Vercel](https://vercel.com/)
 
 ---
@@ -55,8 +55,10 @@ Edit
 /context        # Global state via React Context API
 /public         # Static assets like images
 /styles         # Tailwind & global styles
-🙋‍♀️ Author
-Arti Kumari
+
+
+🙋‍♀️ Author: Arti Kumari
+
 📫 GitHub
 
 📃 License
