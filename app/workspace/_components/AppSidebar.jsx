@@ -58,9 +58,19 @@ const SideBarOptions=[
 
    return (
       <Sidebar>
-      <SidebarHeader className={'p-4'}>
-         <Image src={ '/logo.svg'} alt='logo' width={120} height={120} />
-      </SidebarHeader>
+      <SidebarHeader className="p-4">
+  <div className="flex items-center gap-3">
+    <Image
+  src="/initiative.png"
+  alt="logo"
+  width={40}
+  height={40}
+  className="invert brightness-0"
+/>
+
+    <span className="text-orange-500 font-bold text-xl">UPSKILL</span>
+  </div>
+</SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
           <AddNewCourseDialog>
