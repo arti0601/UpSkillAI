@@ -11,7 +11,7 @@ import EnrollCourseList from './_components/EnrollCourseList'
        <WelcomeBanner />
        <EnrollCourseList />
        <CourseList />
-     
+        
      </div>
    )
  }

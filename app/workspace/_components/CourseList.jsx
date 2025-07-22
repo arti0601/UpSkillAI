@@ -20,14 +20,14 @@ import CourseCard from './CourseCard';
   }
    return (
      <div className='mt-10'>
-       <h2 className='font-bold text-3xl'>Course List</h2>
+       <h2 className='font-bold text-3xl p-5'>Course List</h2>
 
        {courseList?.length == 0 ? <div className='flex p-7 items-center justify-center flex-col border rounded-xl mt-2 bg-secondary'>
         <Image src={'/online-learning.png'} alt='edu' width={80} height={80}/> 
         <h2 className='my-2 text-xl font-bold'>Look like you haven't created any courses yet</h2>  
 
        <AddNewCourseDialog>
-         <Button>+ Create your first course</Button> 
+         <Button className={'glow-button text-white font-bold py-2 px-6 rounded-md transition-all duration-300 bg-orange-500 hover:bg-orange-700'}>+ Create your first course</Button> 
        </AddNewCourseDialog>
            
      </div> : 

@@ -54,18 +54,39 @@ function CourseCard({ course }) {
           </h2>
 
           {course?.courseContent?.length ? (
-            <Button size="sm" 
-                  onClick={onEnrollCourse}
-                  disabled={loading}  >
-             {loading?<LoaderCircle  className='animate-spin'/>: <PlayCircle className="h-4 w-4 mr-1" />}
-              Enroll Course
-            </Button>
+            // <Button size="sm" 
+            //       onClick={onEnrollCourse}
+            //       disabled={loading}  >
+            //  {loading?<LoaderCircle  className='animate-spin'/>: <PlayCircle className="h-4 w-4 mr-1" />}
+            //   Enroll Course
+            // </Button>
+              <Button
+  size="sm"
+  onClick={onEnrollCourse}
+  disabled={loading}
+  className="btn-glow-gradient relative overflow-hidden flex items-center gap-1"
+>
+  {loading ? (
+    <LoaderCircle className="animate-spin h-4 w-4" />
+  ) : (
+    <>
+      <PlayCircle className="h-4 w-4" />
+      Enroll Course
+    </>
+  )}
+</Button>
+
+
           ) : (
             <Link href={`/workspace/edit-course/${course?.cid}`}>
-              <Button size="sm" variant="outline">
+              {/* <Button size="sm" variant="outline">
                 <Settings className="h-4 w-4 mr-1" />
                 Generate Course
-              </Button>
+              </Button> */}
+              <Button size="sm" variant="outline" className="btn-glow-gradient flex items-center gap-1">
+              <Settings className="h-4 w-4" />
+                 Generate Course
+                 </Button>
             </Link>
           )}
         </div>

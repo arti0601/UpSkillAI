@@ -20,10 +20,12 @@ import CourseCard from '../_components/CourseCard';
   }
    return (
      <div>
-        <h2 className='font-bold text-3xl mb-6'>Explore Courses</h2>
-        <div className='flex gap-5 max-w-md'>
+        <h2 className='font-bold text-3xl mb-6 '>Explore Courses</h2>
+        <div className='flex gap-5 max-w-md p-6'>
         <Input placeholder='Search' />
-        <Button> <Search /> Search </Button>
+        <Button className={'btn-glow-gradient relative overflow-hidden flex items-center gap-1'}> <Search /> Search </Button>
+
+   
         </div>
 
          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5'> 

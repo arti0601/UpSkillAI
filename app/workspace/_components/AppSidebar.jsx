@@ -68,13 +68,13 @@ const SideBarOptions=[
   className="invert brightness-0"
 />
 
-    <span className="text-orange-500 font-bold text-xl">UPSKILL</span>
+    <span className="text-orange-800 font-bold text-xl">UPSKILL</span>
   </div>
 </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
           <AddNewCourseDialog>
-             <Button>+ Create New Course</Button>
+             <Button className={'btn-glow-gradient relative overflow-hidden flex items-center gap-1'}>+ Create New Course</Button>
           </AddNewCourseDialog>
          
         </SidebarGroup>
